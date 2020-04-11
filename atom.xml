@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
-  <updated>2020-04-06T14:55:54.947Z</updated>
+  <updated>2020-04-11T02:04:18.661Z</updated>
   <id>http://maximxie.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>table</title>
+    <link href="http://maximxie.github.io/2020/04/11/table/"/>
+    <id>http://maximxie.github.io/2020/04/11/table/</id>
+    <published>2020-04-11T02:03:42.854Z</published>
+    <updated>2020-04-11T02:04:18.661Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

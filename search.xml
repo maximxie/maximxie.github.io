@@ -26,4 +26,9 @@
         <tag>标签1</tag>
       </tags>
   </entry>
+  <entry>
+    <title>table</title>
+    <url>/2020/04/11/table/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">+-----+-----------+------+---------------------+-------+</span><br><span class="line">| sno | sname     | ssex | sbirthday           | class |</span><br><span class="line">+-----+-----------+------+---------------------+-------+</span><br><span class="line">| 101 | 曾华      | 男   | 1977-09-01 00:00:00 | 95033 |</span><br><span class="line">| 102 | 匡明      | 男   | 1975-02-12 00:00:00 | 95031 |</span><br><span class="line">| 103 | 王丽      | 女   | 1976-01-23 00:00:00 | 95033 |</span><br><span class="line">| 104 | 李军      | 男   | 1976-02-20 00:00:00 | 95033 |</span><br><span class="line">| 105 | 王芳      | 女   | 1975-02-10 00:00:00 | 95031 |</span><br><span class="line">| 106 | 陆君      | 男   | 1974-06-03 00:00:00 | 95031 |</span><br><span class="line">| 107 | 王尼玛    | 男   | 1974-06-03 00:00:00 | 95033 |</span><br><span class="line">| 108 | 张全蛋    | 男   | 1974-03-13 00:00:00 | 95031 |</span><br><span class="line">| 109 | 赵铁柱    | 男   | 1974-06-03 00:00:00 | 95031 |</span><br><span class="line">+-----+-----------+------+---------------------+-------+</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
 </search>
