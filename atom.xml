@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
-  <updated>2020-04-11T02:04:18.661Z</updated>
+  <updated>2020-04-11T05:24:59.669Z</updated>
   <id>http://maximxie.github.io/</id>
   
   <author>
@@ -17,25 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>table</title>
-    <link href="http://maximxie.github.io/2020/04/11/table/"/>
-    <id>http://maximxie.github.io/2020/04/11/table/</id>
-    <published>2020-04-11T02:03:42.854Z</published>
-    <updated>2020-04-11T02:04:18.661Z</updated>
+    <title>MySQL学习笔记</title>
+    <link href="http://maximxie.github.io/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://maximxie.github.io/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-04-11T02:21:14.299Z</published>
+    <updated>2020-04-11T05:24:59.669Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;h3 id=&quot;如何在终端上操作mysql数据库&quot;&gt;&lt;a href=&quot;#如何在终端上操作mysql数据库&quot; class=&quot;headerlink&quot; title=&quot;如何在终端上操作mysql数据库:&quot;&gt;&lt;/a&gt;如何在终端上操作mysql数据库:&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;开启数据库的两种方式&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者mysql -u root -p&amp;quot;密码&amp;quot;(之间不要空格)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
     
+      <category term="数据库" scheme="http://maximxie.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://maximxie.github.io/tags/mysql/"/>
     
   </entry>
   
