@@ -36,15 +36,23 @@
         border-left-color: #1E92FB;    /*左边框颜色*/
     }
 </style>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="maximxie Blog">
-<meta property="og:url" content="http://maximxie.github.io/categories/hexo%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/index.html">
+  <meta name="description" content="最近在学习mybatis框架，想要了解一下该框架究竟是如何执行sql的，可能是第一次看源码的缘故，一开始晕头转向的，不过在网上找到了一篇不错的博客，讲的很仔细：深入浅出Mybatis系列（十）—SQL执行流程分析（源码篇）.  ###1. SqlSessionFactory 与 SqlSession.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mybatis_SQL执行流程分析（源码）">
+<meta property="og:url" content="http://maximxie.github.io/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="maximxie Blog">
+<meta property="og:description" content="最近在学习mybatis框架，想要了解一下该框架究竟是如何执行sql的，可能是第一次看源码的缘故，一开始晕头转向的，不过在网上找到了一篇不错的博客，讲的很仔细：深入浅出Mybatis系列（十）—SQL执行流程分析（源码篇）.  ###1. SqlSessionFactory 与 SqlSession.">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://maximxie.github.io/images/Mybatis_SQL01.png">
+<meta property="article:published_time" content="2020-04-28T13:41:42.141Z">
+<meta property="article:modified_time" content="2020-04-28T14:08:08.791Z">
 <meta property="article:author" content="xieyuanfeng">
+<meta property="article:tag" content="mybatis">
+<meta property="article:tag" content="sql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://maximxie.github.io/images/Mybatis_SQL01.png">
 
-<link rel="canonical" href="http://maximxie.github.io/categories/hexo%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/">
+<link rel="canonical" href="http://maximxie.github.io/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/">
 
 
 <script id="page-configurations">
@@ -52,12 +60,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: hexo简单用法 | maximxie Blog</title>
+  <title>Mybatis_SQL执行流程分析（源码） | maximxie Blog</title>
   
 
 
@@ -201,57 +209,124 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://maximxie.github.io/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xieyuanfeng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="maximxie Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Mybatis_SQL执行流程分析（源码）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-04-28 21:41:42 / 修改时间：22:08:08" itemprop="dateCreated datePublished" datetime="2020-04-28T21:41:42+08:00">2020-04-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mybatis%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index"><span itemprop="name">mybatis框架</span></a>
+                </span>
+            </span>
+
+          
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">hexo简单用法
-          <small>分类</small>
-        </h2>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>最近在学习mybatis框架，想要了解一下该框架究竟是如何执行sql的，可能是第一次看源码的缘故，一开始晕头转向的，不过在网上找到了一篇不错的博客，讲的很仔细：<a href="https://www.cnblogs.com/dongying/p/4142476.html" target="_blank" rel="noopener">深入浅出Mybatis系列（十）—SQL执行流程分析（源码篇）</a>. </p>
+<p>###1. SqlSessionFactory 与 SqlSession.</p>
+<a id="more"></a>
+<p>通过前面的章节对于mybatis 的介绍及使用，大家都能体会到SqlSession的重要性了吧， 没错，从表面上来看，咱们都是通过SqlSession去执行sql语句（注意：是从表面看，实际的待会儿就会讲）。那么咱们就先看看是怎么获取SqlSession的吧： </p>
+<p><img src="/images/Mybatis_SQL01.png" alt="avatar"></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+	<div>
+		
+			<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+		
+	</div>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-04-06T15:22:15+08:00"
-              content="2020-04-06">
-          04-06
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mybatis/" rel="tag"><i class="fa fa-tag"></i>mybatis</a>
+              <a href="/tags/sql/" rel="tag"><i class="fa fa-tag"></i>sql</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/04/06/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="MySQL学习笔记">
+      <i class="fa fa-chevron-left"></i> MySQL学习笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
