@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>maximxie Blog</title>
+  <title>maximxie&#39;s Blog</title>
   <icon>http://maximxie.github.io/icon.png</icon>
-  <subtitle>Welcome to my blog!</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://maximxie.github.io/</id>
   
   <author>
-    <name>xieyuanfeng</name>
+    <name>maximxie</name>
     
   </author>
   
