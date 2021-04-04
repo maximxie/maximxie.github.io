@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
-  <updated>2020-04-28T14:17:03.904Z</updated>
+  <updated>2021-04-04T03:20:21.314Z</updated>
   <id>http://maximxie.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MyBatis入门</title>
+    <link href="http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/"/>
+    <id>http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/</id>
+    <published>2021-04-04T03:08:53.020Z</published>
+    <updated>2021-04-04T03:20:21.314Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h3&gt;&lt;h4 id=&quot;1、什么是-MyBatis？&quot;&gt;&lt;a href=&quot;#1、什么是-MyBatis？&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis" scheme="http://maximxie.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mybatis_SQL执行流程分析（源码）</title>
-    <link href="http://maximxie.github.io/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/"/>
-    <id>http://maximxie.github.io/2020/04/28/Mybatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/</id>
+    <link href="http://maximxie.github.io/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/"/>
+    <id>http://maximxie.github.io/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/</id>
     <published>2020-04-28T13:41:42.141Z</published>
-    <updated>2020-04-28T14:17:03.904Z</updated>
+    <updated>2021-04-04T03:19:43.647Z</updated>
     
     <summary type="html">
     
@@ -36,12 +63,12 @@
     </summary>
     
     
-      <category term="mybatis框架" scheme="http://maximxie.github.io/categories/mybatis%E6%A1%86%E6%9E%B6/"/>
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
     
-    
-      <category term="mybatis" scheme="http://maximxie.github.io/tags/mybatis/"/>
     
       <category term="sql" scheme="http://maximxie.github.io/tags/sql/"/>
+    
+      <category term="Mybatis" scheme="http://maximxie.github.io/tags/Mybatis/"/>
     
   </entry>
   
@@ -50,12 +77,14 @@
     <link href="http://maximxie.github.io/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://maximxie.github.io/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2020-04-11T02:21:14.299Z</published>
-    <updated>2020-09-10T11:02:01.625Z</updated>
+    <updated>2021-04-04T03:17:04.956Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;如何在终端上操作mysql数据库&quot;&gt;&lt;a href=&quot;#如何在终端上操作mysql数据库&quot; class=&quot;headerlink&quot; title=&quot;如何在终端上操作mysql数据库:&quot;&gt;&lt;/a&gt;如何在终端上操作mysql数据库:&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;开启数据库的两种方式&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net start mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者mysql -u root -p&amp;quot;密码&amp;quot;(之间不要空格)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h3 id=&quot;一、如何在终端上操作mysql数据库&quot;&gt;&lt;a href=&quot;#一、如何在终端上操作mysql数据库&quot; class=&quot;headerlink&quot; title=&quot;一、如何在终端上操作mysql数据库:&quot;&gt;&lt;/a&gt;一、如何在终端上操作mysql数据库:&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;开启数据库的两种方式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;net &lt;span class=&quot;keyword&quot;&gt;start&lt;/span&gt; mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mysql -u root -p&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者mysql -u root -p&lt;span class=&quot;string&quot;&gt;&quot;密码&quot;&lt;/span&gt;(之间不要空格)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

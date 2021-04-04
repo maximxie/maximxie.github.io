@@ -36,28 +36,33 @@
         border-left-color: #1E92FB;    /*左边框颜色*/
     }
 </style>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="峰回路转">
-<meta property="og:url" content="http://maximxie.github.io/index.html">
+  <meta name="description" content="一、简介1、什么是 MyBatis？ MyBatis 是一款优秀的持久层框架  MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的过程  MyBatis 可以使用简单的 XML 或注解来配置和映射原生信息，将接口和 Java 的 实体类 【Plain Old Java Objects,普通的 Java对象】映射成数据库中的记录。  MyBatis 本是apache的一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MyBatis入门">
+<meta property="og:url" content="http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="峰回路转">
+<meta property="og:description" content="一、简介1、什么是 MyBatis？ MyBatis 是一款优秀的持久层框架  MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的过程  MyBatis 可以使用简单的 XML 或注解来配置和映射原生信息，将接口和 Java 的 实体类 【Plain Old Java Objects,普通的 Java对象】映射成数据库中的记录。  MyBatis 本是apache的一个">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-04T03:08:53.020Z">
+<meta property="article:modified_time" content="2021-04-04T03:20:21.314Z">
 <meta property="article:author" content="maximxie">
+<meta property="article:tag" content="MyBatis">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://maximxie.github.io/">
+<link rel="canonical" href="http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>峰回路转</title>
+  <title>MyBatis入门 | 峰回路转</title>
   
 
 
@@ -200,9 +205,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -218,10 +224,9 @@
       <meta itemprop="name" content="峰回路转">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/" class="post-title-link" itemprop="url">MyBatis入门</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          MyBatis入门
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -268,7 +273,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="1、什么是-MyBatis？"><a href="#1、什么是-MyBatis？" class="headerlink" title="1、什么是 MyBatis？"></a>1、什么是 MyBatis？</h4><ul>
+        <h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="1、什么是-MyBatis？"><a href="#1、什么是-MyBatis？" class="headerlink" title="1、什么是 MyBatis？"></a>1、什么是 MyBatis？</h4><ul>
 <li><p>MyBatis 是一款优秀的<strong>持久层框架</strong></p>
 </li>
 <li><p>MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的过程</p>
@@ -389,7 +394,6 @@
 <li>Junit 包测试</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.Xie.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.Xie.pojo.User;</span><br><span class="line"><span class="keyword">import</span> com.Xie.utils.MybatisUtils;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.session.SqlSession;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserMapperTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        SqlSession sqlSession=MybatisUtils.getSqlSession();</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            UserMapper userMapper =sqlSession.getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">            List&lt;User&gt; userList= userMapper.getUserList();</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span>(User user: userList)&#123;</span><br><span class="line">                System.out.println(user);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">            e.getStackTrace();</span><br><span class="line">        &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">            sqlSession.close();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getUserById</span><span class="params">()</span></span>&#123;</span><br><span class="line">        SqlSession sqlSession=MybatisUtils.getSqlSession();</span><br><span class="line">        UserMapper mapper=sqlSession.getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        User user=mapper.getUserById(<span class="number">1</span>);</span><br><span class="line">        System.out.println(user);</span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">        SqlSession sqlSession=MybatisUtils.getSqlSession();</span><br><span class="line">        UserMapper mapper=sqlSession.getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        <span class="keyword">int</span> res=mapper.addUser(<span class="keyword">new</span> User(<span class="number">4</span>,<span class="string">"谢沅峰"</span>,<span class="string">"55555"</span>));</span><br><span class="line">        <span class="keyword">if</span>(res&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">"插入成功！"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//增删改需要提交事务</span></span><br><span class="line">        sqlSession.commit();</span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">UpdateUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">        SqlSession sqlSession=MybatisUtils.getSqlSession();</span><br><span class="line">        UserMapper mapper=sqlSession.getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        mapper.UpdateUser(<span class="keyword">new</span> User(<span class="number">1</span>,<span class="string">"张三"</span>,<span class="string">"12345"</span>));</span><br><span class="line">        sqlSession.commit();</span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">DeleteUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">        SqlSession sqlSession=MybatisUtils.getSqlSession();</span><br><span class="line">        UserMapper mapper=sqlSession.getMapper(UserMapper<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        mapper.DeleteUser(<span class="number">4</span>);</span><br><span class="line">        sqlSession.commit();</span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
@@ -397,306 +401,42 @@
     
 	<div>
 		
-	</div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://maximxie.github.io/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="maximxie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="峰回路转">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">Mybatis_SQL执行流程分析（源码）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-28 21:41:42" itemprop="dateCreated datePublished" datetime="2020-04-28T21:41:42+08:00">2020-04-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-04 11:19:43" itemprop="dateModified" datetime="2021-04-04T11:19:43+08:00">2021-04-04</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Mybatis%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index"><span itemprop="name">Mybatis框架</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
+			<div>
     
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
     
-    <a title="valine" href="/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近在学习mybatis框架，想要了解一下该框架究竟是如何执行sql的，可能是第一次看源码的缘故，一开始晕头转向的，不过在网上找到了一篇不错的博客，讲的很仔细：<a href="https://www.cnblogs.com/dongying/p/4142476.html" target="_blank" rel="noopener">深入浅出Mybatis系列（十）—SQL执行流程分析（源码篇）</a>. </p>
-
-      
-    </div>
-
-    
-    
-    
-	<div>
+</div>
 		
 	</div>
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/MyBatis/" rel="tag"><i class="fa fa-tag"></i>MyBatis</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://maximxie.github.io/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="maximxie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="峰回路转">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">MySQL学习笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-11 10:21:14" itemprop="dateCreated datePublished" datetime="2020-04-11T10:21:14+08:00">2020-04-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-04 11:17:04" itemprop="dateModified" datetime="2021-04-04T11:17:04+08:00">2021-04-04</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="一、如何在终端上操作mysql数据库"><a href="#一、如何在终端上操作mysql数据库" class="headerlink" title="一、如何在终端上操作mysql数据库:"></a>一、如何在终端上操作mysql数据库:</h3><ol>
-<li>开启数据库的两种方式</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">net <span class="keyword">start</span> mysql</span><br><span class="line">mysql -u root -p</span><br><span class="line">或者mysql -u root -p<span class="string">"密码"</span>(之间不要空格)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/11/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-	<div>
-		
-	</div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://maximxie.github.io/2020/04/06/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="maximxie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="峰回路转">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/06/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-04-06 15:22:15 / 修改时间：22:55:54" itemprop="dateCreated datePublished" datetime="2020-04-06T15:22:15+08:00">2020-04-06</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">hexo简单用法</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/04/06/hello-world/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/06/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/06/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/28/MyBatis_SQL%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90/" rel="prev" title="Mybatis_SQL执行流程分析（源码）">
+      <i class="fa fa-chevron-left"></i> Mybatis_SQL执行流程分析（源码）
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-	<div>
-		
-	</div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -743,6 +483,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、简介"><span class="nav-number">1.</span> <span class="nav-text">一、简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、什么是-MyBatis？"><span class="nav-number">1.1.</span> <span class="nav-text">1、什么是 MyBatis？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、持久化"><span class="nav-number">1.2.</span> <span class="nav-text">2、持久化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、持久层"><span class="nav-number">1.3.</span> <span class="nav-text">3、持久层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、为什么需要Mybatis"><span class="nav-number">1.4.</span> <span class="nav-text">4、为什么需要Mybatis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、我的环境"><span class="nav-number">1.5.</span> <span class="nav-text">4、我的环境</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、MyBatis第一个程序"><span class="nav-number">2.</span> <span class="nav-text">二、MyBatis第一个程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、搭建实验数据库"><span class="nav-number">2.1.</span> <span class="nav-text">1、搭建实验数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、导入MyBatis相关-jar-包-pom-xml"><span class="nav-number">2.2.</span> <span class="nav-text">2、导入MyBatis相关 jar 包(pom.xml)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、编写MyBatis核心配置文件"><span class="nav-number">2.3.</span> <span class="nav-text">3、编写MyBatis核心配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、编写MyBatis工具类"><span class="nav-number">2.4.</span> <span class="nav-text">4、编写MyBatis工具类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、创建实体类"><span class="nav-number">2.5.</span> <span class="nav-text">5、创建实体类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、编写Mapper接口类"><span class="nav-number">2.6.</span> <span class="nav-text">6、编写Mapper接口类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、编写Mapper-xml配置文件"><span class="nav-number">2.7.</span> <span class="nav-text">7、编写Mapper.xml配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8、编写测试类"><span class="nav-number">2.8.</span> <span class="nav-text">8、编写测试类</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
