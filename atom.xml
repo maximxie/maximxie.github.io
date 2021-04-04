@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
-  <updated>2021-04-04T03:20:21.314Z</updated>
+  <updated>2021-04-04T03:25:45.735Z</updated>
   <id>http://maximxie.github.io/</id>
   
   <author>
@@ -21,17 +21,15 @@
     <link href="http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/"/>
     <id>http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/</id>
     <published>2021-04-04T03:08:53.020Z</published>
-    <updated>2021-04-04T03:20:21.314Z</updated>
+    <updated>2021-04-04T03:25:45.735Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h3&gt;&lt;h4 id=&quot;1、什么是-MyBatis？&quot;&gt;&lt;a href=&quot;#1、什么是-MyBatis？&quot;
-        
-      
+      &lt;h3 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h3&gt;&lt;h4 id=&quot;1、什么是-MyBatis？&quot;&gt;&lt;a href=&quot;#1、什么是-MyBatis？&quot; class=&quot;headerlink&quot; title=&quot;1、什么是 MyBatis？&quot;&gt;&lt;/a&gt;1、什么是 MyBatis？&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;MyBatis 是一款优秀的&lt;strong&gt;持久层框架&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的过程&lt;/li&gt;
+&lt;li&gt;MyBatis 可以使用简单的 XML 或注解来配置和映射原生信息，将接口和 Java 的 实体类 【Plain Old Java Objects,普通的 Java对象】映射成数据库中的记录。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
