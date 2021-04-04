@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://maximxie.github.io/"/>
-  <updated>2021-04-04T03:25:45.735Z</updated>
+  <updated>2021-04-04T04:01:28.671Z</updated>
   <id>http://maximxie.github.io/</id>
   
   <author>
@@ -15,6 +15,340 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring09-声明式事务</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring09-%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring09-%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1/</id>
+    <published>2021-04-04T04:00:13.608Z</published>
+    <updated>2021-04-04T04:01:28.671Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、回顾事务&quot;&gt;&lt;a href=&quot;#一、回顾事务&quot; class=&quot;headerlink&quot; title=&quot;一、回顾事务&quot;&gt;&lt;/a&gt;一、回顾事务&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;事务在项目开发过程非常重要，涉及到数据的一致性的问题，不容马虎！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;事务管理是企业级应用程序开发中必备技术，用来确保数据的完整性和一致性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;事务就是把一系列的动作当成一个独立的工作单元，这些动作要么全部完成，要么全部不起作用。&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring08-整合spring和MyBatis</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring08-%E6%95%B4%E5%90%88spring%E5%92%8CMyBatis/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring08-%E6%95%B4%E5%90%88spring%E5%92%8CMyBatis/</id>
+    <published>2021-04-04T03:59:04.462Z</published>
+    <updated>2021-04-04T04:00:02.983Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、步骤&quot;&gt;&lt;a href=&quot;#一、步骤&quot; class=&quot;headerlink&quot; title=&quot;一、步骤&quot;&gt;&lt;/a&gt;一、步骤&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;导入相关jar包&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;mybatis&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.mybatis&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;mybatis&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.5.2&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring07-AOP面向切面编程</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring07-AOP%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring07-AOP%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</id>
+    <published>2021-04-04T03:57:48.233Z</published>
+    <updated>2021-04-04T03:58:54.055Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、什么是AOP&quot;&gt;&lt;a href=&quot;#一、什么是AOP&quot; class=&quot;headerlink&quot; title=&quot;一、什么是AOP&quot;&gt;&lt;/a&gt;一、什么是AOP&lt;/h3&gt;&lt;p&gt;AOP（Aspect Oriented Programming）意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是函数式编程的一种衍生范型。利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring06-静态、动态代理模式</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring06-%E9%9D%99%E6%80%81%E3%80%81%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring06-%E9%9D%99%E6%80%81%E3%80%81%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</id>
+    <published>2021-04-04T03:56:20.186Z</published>
+    <updated>2021-04-04T03:57:37.393Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、静态代理&quot;&gt;&lt;a href=&quot;#一、静态代理&quot; class=&quot;headerlink&quot; title=&quot;一、静态代理&quot;&gt;&lt;/a&gt;一、静态代理&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;静态代理角色分析&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;抽象角色 : 一般使用接口或者抽象类来实现&lt;/li&gt;
+&lt;li&gt;真实角色 : 被代理的角色&lt;/li&gt;
+&lt;li&gt;代理角色 : 代理真实角色 ; 代理真实角色后 , 一般会做一些附属的操作 .&lt;/li&gt;
+&lt;li&gt;客户  :  使用代理角色来进行一些操作 .&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring05-使用注解开发</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring05-%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring05-%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91/</id>
+    <published>2021-04-04T03:54:57.232Z</published>
+    <updated>2021-04-04T03:56:06.132Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、说明&quot;&gt;&lt;a href=&quot;#一、说明&quot; class=&quot;headerlink&quot; title=&quot;一、说明&quot;&gt;&lt;/a&gt;一、说明&lt;/h3&gt;&lt;p&gt;在spring4之后，想要使用注解形式，必须得要引入aop的包,在pom.xml添加以下配置时已导入&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.springframework&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;spring-webmvc&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;5.2.5.RELEASE&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring04-自动装配</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring04-%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring04-%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D/</id>
+    <published>2021-04-04T03:53:20.553Z</published>
+    <updated>2021-04-04T03:54:43.739Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、自动装配说明&quot;&gt;&lt;a href=&quot;#一、自动装配说明&quot; class=&quot;headerlink&quot; title=&quot;一、自动装配说明&quot;&gt;&lt;/a&gt;一、自动装配说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;自动装配是使用spring满足bean依赖的一种方法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;spring会在应用上下文中为某个bean寻找其依赖的bean。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring中bean有三种装配机制，分别是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在xml中显式配置；&lt;/li&gt;
+&lt;li&gt;在java中显式配置；&lt;/li&gt;
+&lt;li&gt;隐式的bean发现机制和自动装配。&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring03-依赖注入（DI）及作用域</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring03-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%EF%BC%88DI%EF%BC%89%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring03-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%EF%BC%88DI%EF%BC%89%E5%8F%8A%E4%BD%9C%E7%94%A8%E5%9F%9F/</id>
+    <published>2021-04-04T03:51:53.851Z</published>
+    <updated>2021-04-04T03:53:10.409Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; title=&quot;一、概念&quot;&gt;&lt;/a&gt;一、概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;依赖注入（Dependency Injection,DI）。&lt;/li&gt;
+&lt;li&gt;依赖 : 指Bean对象的创建依赖于容器 . Bean对象的依赖资源 .&lt;/li&gt;
+&lt;li&gt;注入 : 指Bean对象所依赖的资源 , 由容器来设置和装配 .&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring02-Spring入门及简单配置</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring02-Spring%E5%85%A5%E9%97%A8%E5%8F%8A%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring02-Spring%E5%85%A5%E9%97%A8%E5%8F%8A%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-04-04T03:50:24.302Z</published>
+    <updated>2021-04-04T03:51:39.855Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;一、导入jar包&quot;&gt;&lt;a href=&quot;#一、导入jar包&quot; class=&quot;headerlink&quot; title=&quot;一、导入jar包&quot;&gt;&lt;/a&gt;一、导入jar包&lt;/h4&gt;&lt;p&gt;注 : spring 需要导入commons-logging进行日志记录 . 我们利用maven , 他会自动下载对应的依赖项 .&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.springframework&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;spring-webmvc&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;5.2.5.RELEASE&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring01-spring概述及IOC理论推导</title>
+    <link href="http://maximxie.github.io/2021/04/04/Spring01-spring%E6%A6%82%E8%BF%B0%E5%8F%8AIOC%E7%90%86%E8%AE%BA%E6%8E%A8%E5%AF%BC/"/>
+    <id>http://maximxie.github.io/2021/04/04/Spring01-spring%E6%A6%82%E8%BF%B0%E5%8F%8AIOC%E7%90%86%E8%AE%BA%E6%8E%A8%E5%AF%BC/</id>
+    <published>2021-04-04T03:48:07.474Z</published>
+    <updated>2021-04-04T03:50:05.546Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h3&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Spring : 春天 —&amp;gt;给软件行业带来了春天&lt;/li&gt;
+&lt;li&gt;2002年，Rod Jahnson首次推出了Spring框架雏形interface21框架。&lt;/li&gt;
+&lt;li&gt;2004年3月24日，Spring框架以interface21框架为基础，经过重新设计，发布了1.0正式版。&lt;/li&gt;
+&lt;li&gt;很难想象Rod Johnson的学历 , 他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。&lt;/li&gt;
+&lt;li&gt;Spring理念 : 使现有技术更加实用 . 本身就是一个大杂烩 , 整合现有的框架技术&lt;/li&gt;
+&lt;li&gt;官网 : &lt;a href=&quot;http://spring.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://spring.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;官方下载地址 : &lt;a href=&quot;https://repo.spring.io/libs-release-local/org/springframework/spring/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://repo.spring.io/libs-release-local/org/springframework/spring/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub : &lt;a href=&quot;https://github.com/spring-projects&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/spring-projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring框架" scheme="http://maximxie.github.io/categories/Spring%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://maximxie.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单的结果集映射以及日志配置</title>
+    <link href="http://maximxie.github.io/2021/04/04/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BB%93%E6%9E%9C%E9%9B%86%E6%98%A0%E5%B0%84%E4%BB%A5%E5%8F%8A%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE/"/>
+    <id>http://maximxie.github.io/2021/04/04/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BB%93%E6%9E%9C%E9%9B%86%E6%98%A0%E5%B0%84%E4%BB%A5%E5%8F%8A%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-04-04T03:46:03.884Z</published>
+    <updated>2021-04-04T03:47:36.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一、结果集映射（ResultMap）&quot;&gt;&lt;a href=&quot;#一、结果集映射（ResultMap）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis" scheme="http://maximxie.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Limit实现分页</title>
+    <link href="http://maximxie.github.io/2021/04/04/%E4%BD%BF%E7%94%A8Limit%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/"/>
+    <id>http://maximxie.github.io/2021/04/04/%E4%BD%BF%E7%94%A8Limit%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5/</id>
+    <published>2021-04-04T03:43:42.817Z</published>
+    <updated>2021-04-04T03:44:47.746Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;一、limit实现分页&quot;&gt;&lt;a href=&quot;#一、limit实现分页&quot; class=&quot;headerlink&quot; title=&quot;一、limit实现分页&quot;&gt;&lt;/a&gt;一、limit实现分页&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;为什么需要分页？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在学习mybatis等持久层框架的时候，会经常对数据进行增删改查操作，使用最多的是对数据库进行查询操作，如果查询大量数据的时候，我们往往使用分页进行查询，也就是每次处理小部分数据，这样对数据库压力就在可控范围内。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis" scheme="http://maximxie.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一对多和多对一处理</title>
+    <link href="http://maximxie.github.io/2021/04/04/%E4%B8%80%E5%AF%B9%E5%A4%9A%E5%92%8C%E5%A4%9A%E5%AF%B9%E4%B8%80%E5%A4%84%E7%90%86/"/>
+    <id>http://maximxie.github.io/2021/04/04/%E4%B8%80%E5%AF%B9%E5%A4%9A%E5%92%8C%E5%A4%9A%E5%AF%B9%E4%B8%80%E5%A4%84%E7%90%86/</id>
+    <published>2021-04-04T03:40:53.607Z</published>
+    <updated>2021-04-04T03:45:10.036Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、多对一的处理&quot;&gt;&lt;a href=&quot;#一、多对一的处理&quot; class=&quot;headerlink&quot; title=&quot;一、多对一的处理&quot;&gt;&lt;/a&gt;一、多对一的处理&lt;/h3&gt;&lt;p&gt;多对一的理解：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多个学生对应一个老师&lt;/li&gt;
+&lt;li&gt;如果对于学生这边，就是一个多对一的现象，即从学生这边关联一个老师！&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis" scheme="http://maximxie.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动态SQL</title>
+    <link href="http://maximxie.github.io/2021/04/04/%E5%8A%A8%E6%80%81SQL/"/>
+    <id>http://maximxie.github.io/2021/04/04/%E5%8A%A8%E6%80%81SQL/</id>
+    <published>2021-04-04T03:30:31.300Z</published>
+    <updated>2021-04-04T03:45:46.778Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、介绍&quot;&gt;&lt;a href=&quot;#一、介绍&quot; class=&quot;headerlink&quot; title=&quot;一、介绍&quot;&gt;&lt;/a&gt;一、介绍&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;什么是动态SQL：&lt;strong&gt;动态SQL指的是根据不同的查询条件 , 生成不同的Sql语句.&lt;/strong&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;官网描述：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MyBatis 的强大特性之一便是它的动态 SQL。如果你有使用 JDBC 或其它类似框架的经验，你就能体会到根据不同条件拼接 SQL 语句的痛苦。例如拼接时要确保不能忘记添加必要的空格，还要注意去掉列表最后一个列名的逗号。利用动态 SQL 这一特性可以彻底摆脱这种痛苦。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;虽然在以前使用动态 SQL 并非一件易事，但正是 MyBatis 提供了可以被用在任意 SQL 映射语句中的强大的动态 SQL 语言得以改进这种情形。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;动态 SQL 元素和 JSTL 或基于类似 XML 的文本处理器相似。在 MyBatis 之前的版本中，有很多元素需要花时间了解。MyBatis 3 大大精简了元素种类，现在只需学习原来一半的元素便可。MyBatis 采用功能强大的基于 OGNL 的表达式来淘汰其它大部分元素。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  -------------------------------&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - if&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - choose (when, otherwise)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - trim (where, set)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - foreach&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  -------------------------------&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="MyBatis" scheme="http://maximxie.github.io/tags/MyBatis/"/>
+    
+  </entry>
   
   <entry>
     <title>MyBatis入门</title>
