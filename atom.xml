@@ -355,7 +355,7 @@
     <link href="http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/"/>
     <id>http://maximxie.github.io/2021/04/04/MyBatis%E5%85%A5%E9%97%A8/</id>
     <published>2021-04-04T03:08:53.020Z</published>
-    <updated>2021-04-04T03:25:45.735Z</updated>
+    <updated>2021-04-04T03:49:56.810Z</updated>
     
     <summary type="html">
     
@@ -398,9 +398,9 @@
       <category term="Mybatis框架" scheme="http://maximxie.github.io/categories/Mybatis%E6%A1%86%E6%9E%B6/"/>
     
     
-      <category term="sql" scheme="http://maximxie.github.io/tags/sql/"/>
-    
       <category term="Mybatis" scheme="http://maximxie.github.io/tags/Mybatis/"/>
+    
+      <category term="sql" scheme="http://maximxie.github.io/tags/sql/"/>
     
   </entry>
   
